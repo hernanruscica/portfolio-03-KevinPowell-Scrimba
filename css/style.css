@@ -133,7 +133,7 @@ h3 {font-size: var(--fs-h3);}
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     padding: 1em;
 }
 
@@ -290,6 +290,10 @@ header {
     .nav-toggle {
         visibility: hidden;        
     }
+    
+    header {
+        align-items: center;
+    }
 
     .nav {
         position: relative;
@@ -298,7 +302,12 @@ header {
         color: var(--clr-dark);
     }
     .nav__list {
-        flex-direction: row;
+        flex-direction: row;  
+            
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 2em;
     }
 
     .nav__link {
