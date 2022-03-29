@@ -218,6 +218,10 @@ header {
 }
 
 @media (min-width: 600px) {
+
+    
+
+
     .intro {
         display: grid;
         width: min-content;
@@ -282,6 +286,25 @@ header {
 }
 
 @media (min-width: 800px) {
+
+    .nav-toggle {
+        visibility: hidden;        
+    }
+
+    .nav {
+        position: relative;
+        transform: translate(0%);
+        background-color: var(--clr-light);
+        color: var(--clr-dark);
+    }
+    .nav__list {
+        flex-direction: row;
+    }
+
+    .nav__link {
+        font-size: var(--fs-h3);
+    }
+
     .services {
         display: flex;
         max-width: 1000px;
